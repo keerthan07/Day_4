@@ -1,0 +1,31 @@
+using System;
+
+public class Employee
+{
+    private static int cnt;
+	
+	public Employee()
+	{
+	    cnt++;
+	}
+	public static int counter
+	{
+	    get { return cnt; }
+	}
+}
+
+public class program
+{
+    public static void Main(string[] args)
+	{
+	    Employee emp1=new Employee();
+		Employee emp2=new Employee();
+		Employee emp3=new Employee();
+		Employee emp4=new Employee();
+		Employee emp5=new Employee();
+		
+		Console.WriteLine(Employee.counter);
+		
+		Console.ReadLine();
+	}
+}
